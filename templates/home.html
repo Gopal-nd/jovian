@@ -32,19 +32,23 @@
       color:rgb(100,100,100);
       text-align:center;
     }
-    .container{
-      max-width:720px;
-      margin:0 auto 0 auto; 
-    }
+    a{
+      text-decoration:none;
+      color:white;
+     
+    
   </style>
 </head>
 <body>
   <div class="container">
-    
+    {% include 'nav.html'%}
   <h1 class="mt-2-mb-2">Joviane Careers</h1>
   <img class="img-fluid" src="https://jovian-1--gopaln1.repl.co/static/banner.jpg" alt="" height="350px">
   <h2>About jovian</h2>
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <div class="row">
+  <p class="col-md-6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <img src="/static/workers.jpg" alt="" height="320px" class="d-none d-md-block col-md-6">
+    </div>
   <h2>Open job Positions</h2>
   <p>TODO - Show the jobs here</p>
     <div>
@@ -54,9 +58,11 @@
       
     </div>
   <div style="text-align:center">
-  <button class="btn btn-success" >Contact Us</button>
+  <button class="btn btn-primary mt-5 " > 
+<a href="mailto:hello@jovain.ai?subject=question%20about%20job%20Opening&body=my%20name%20%3A%20%3Cyour%20name%3E%0D%0Amy%20question%3A%20%3Cyour%20questions%3E"> Contact Us</a></button>
   </div>
-  <p class="text-center mt-5-mb-2" >2023 @ copyright </p>
+  
+    {% include 'footer.html' %}
   </div>
 </body>
 </html>
